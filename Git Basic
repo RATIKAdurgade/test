@@ -39,7 +39,7 @@
 #git merge <branchname>
 #git push origin master
 --------------------------------------------------------------------------------
-DELETE BRANCH
+              DELETE BRANCH
 #git branch -d <branchname>
 git branch -a
 #git push origit --delete <branchname>
