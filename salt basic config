@@ -1,0 +1,19 @@
+		salt
+#sudo apt-get install python-software-properties
+#sudo add-apt-repository ppa:saltstack/salt
+#sudo apt-get install software-properties-common
+#sudo apt-get update
+#apt-get install salt-master
+#apt-get install salt-minion
+		edit master
+/etc/salt/master
+ interface: ip
+
+salt-key -L
+salt-key -A
+
+test it with 
+salt "*" test.ping
+		edit minion
+/etc/salt/minion
+master: salt / master: ip
