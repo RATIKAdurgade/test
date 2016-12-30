@@ -1,0 +1,46 @@
+#apt-get install git   (git <verb>  --help)
+#apt-get update    (git help <verb>)
+#git --version
+#git config --global user.name "Ratika Pawal"
+#git config --global user.email "Ratika@yahoo.com"
+#git config --list
+
+#git init
+#touch .gitignore (add files to ignore, can use wildcards)
+#git add <filename>	/   git add -A(all files)
+#git status
+#git reset <filename> remove from staging area
+#git commit -m "detail messag"
+#git log
+---------------------------------------------------------------------------------
+		REMOTE
+#git clone <url> <where to clone>
+#git remote -v
+#git branch -a
+#git add
+#git status
+#git pull origin master
+#git push origin master
+-------------------------------------------------------------------------------------
+		BRANCH
+#git branch -a
+#git branch <branchname>
+#git checkout <branchname> (to work on the "branchname " branch)
+(*shows working branch)
+#git status
+#git add
+#git commit -m "msg"
+#git push -u origit <branchnamr>
+#git pull
+#git push
+#git checkout master
+#git pull origin master
+#gti branch --merged
+#git merge <branchname>
+#git push origin master
+--------------------------------------------------------------------------------
+DELETE BRANCH
+#git branch -d <branchname>
+git branch -a
+#git push origit --delete <branchname>
+
