@@ -1,0 +1,25 @@
+		CREATE IMAGE
+#tar --exclude='./proc' --exclude='./dev' --exclude='./temp' -cf /temp/hv1.tar .
+#bg
+#watch du -sk /temp/hv1.tar
+#jobs
+# du -sh /temp/hv1.tar
+# gzip /temp/hv1.tar
+
+------------------------------------------------------------------------------------------
+		DOCKER INSTALLATION
+#  apt-get install apt-transport-https
+# apt-add-repository 'deb https://apt.dockerproject.org/repo ubuntu-xenial main'
+# apt-get update
+
+# apt-cache policy docker-engine
+#apt-get install -y docker-engine
+#systemctl start docker
+#systemctl enable docker
+
+#cat hv1.tar.gz | docker import - hv1docker
+#docker ps
+#docker images
+#docker run -d -p 80:80 3d30e95aa1cd /usr/sbin/nginx
+#docker run -i -t 3d30e95aa1cd /bin/bash
+# docker commit 1f298d0f88ca myrepo/hv1docker:v1.1
